@@ -1,0 +1,30 @@
+[package]
+name = "millionaire-problem"
+version = "0.0.0"
+authors = ["Itzik Grossman <itzik@scrtlabs.com>"]
+edition = "2021"
+publish = false
+description = "A simple secret contract that solves the millionaire's problem on Secret Network"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'abort'
+incremental = false
+overflow-checks = true
+
+[dependencies]
+cosmwasm-std = { git = "https://github.com/scrtlabs/cosmwasm", branch = "secret" }
+cosmwasm-storage = { git = "https://github.com/scrtlabs/cosmwasm", branch = "secret" }
+serde = { version = "1.0.163", default-features = false, features = ["derive"] }
+thiserror = "1.0"

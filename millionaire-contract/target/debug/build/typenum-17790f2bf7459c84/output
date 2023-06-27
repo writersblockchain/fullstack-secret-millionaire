@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/sean_conrad/Desktop/developer/secret/secret-millionaire/millionaire-contract/target/debug/build/typenum-17790f2bf7459c84/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/sean_conrad/Desktop/developer/secret/secret-millionaire/millionaire-contract/target/debug/build/typenum-17790f2bf7459c84/out/op.rs
