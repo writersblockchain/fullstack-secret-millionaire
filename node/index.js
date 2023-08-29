@@ -9,14 +9,14 @@ const contract_wasm = fs.readFileSync(
   "../millionaire-contract/contract.wasm.gz"
 );
 
-let codeId = 21998;
+let codeId = 934;
 let contractCodeHash =
   "a448595e3a46197776ff966c980d0de770c052c7f1ced1577027906835126bd5";
-let contractAddress = "secret107zv242mk90lwywqhm2xljqzy62yucwsc7f2xd";
+let contractAddress = "secret1xjvnf8fru5xe2x73g6mdfef9zcj00umhvvzqsp";
 
 const secretjs = new SecretNetworkClient({
-  chainId: "pulsar-2",
-  url: "https://api.pulsar.scrttestnet.com",
+  chainId: "pulsar-3",
+  url: "https://api.pulsar3.scrttestnet.com",
   wallet: wallet,
   walletAddress: wallet.address,
 });
